@@ -1,0 +1,30 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .botao-pausar-reiniciar {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff; /* Cor padrão para o botão */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  
+  .botao-pausar-reiniciar.paused {
+    background-color: #28a745; /* Verde para indicar serviço pausado */
+  }
+  
+  .botao-pausar-reiniciar.running {
+    background-color: #dc3545; /* Vermelho para indicar serviço em execução */
+  }
+  
+  .botao-pausar-reiniciar .icon {
+    height: 1.25em; /* 20px */
+    width: 1.25em; /* 20px */
+    margin-right: 0.5em; /* Espaçamento entre o ícone e o texto */
+    vertical-align: middle; /* Alinha o ícone com o texto */
+  }

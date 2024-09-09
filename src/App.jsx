@@ -1,7 +1,8 @@
-import React from 'react';
+//import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import SensorDataChart from './SensorDataChart.jsx';
 import BotaoLimparDados from './BotaoLimparDados';
+import BotaoPausarReiniciarServico from './BotaoPausarReiniciarServico'; // Importe o novo botão
 import HomePage from './HomePage';
 import RegisterForm from './RegisterForm';
 import LoginForm from './LoginForm';
@@ -24,7 +25,10 @@ function App() {
             <>
               <h1>Dados do Sensor</h1>
               <SensorDataChart />
-              <BotaoLimparDados />
+              <div style={{ display: 'flex', gap: '10px', marginTop: '20px' }}>
+                <BotaoLimparDados />
+                <BotaoPausarReiniciarServico /> {/* Novo botão */}
+              </div>
             </>
           ) : <Navigate to="/login" />} />
 
